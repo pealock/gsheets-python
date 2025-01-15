@@ -1,4 +1,5 @@
 import gspread
+import time
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Define the scope for authentication
@@ -13,8 +14,10 @@ client = gspread.authorize(credentials)
 # Open the Google Sheet by its name or URL
 sheet = client.open('python-sheets').sheet1
 
-# Get all values from the sheet
-data = sheet.acell('F1').numeric_value
-
-# Print the data
-print(data)
+while True:
+    # Get all values from the sheet
+    data = sheet.acell('F1').numeric_value
+    # Print the data
+    print(data)
+    # Sleep
+    time.sleep(10)
