@@ -24,5 +24,5 @@ sheet = client.open('python-sheets').sheet1
 
 
 def get_data():
-    data = sheet.acell('F1').numeric_value
+    data = sheet.acell('F1').value
     return data
