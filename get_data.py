@@ -14,10 +14,15 @@ client = gspread.authorize(credentials)
 # Open the Google Sheet by its name or URL
 sheet = client.open('python-sheets').sheet1
 
-while True:
+#while True:
     # Get all values from the sheet
-    data = sheet.acell('F1').numeric_value
+    #data = sheet.acell('F1').numeric_value
     # Print the data
-    print(data)
+    #print(data)
     # Sleep
-    time.sleep(10)
+    #time.sleep(10)
+
+
+def get_data():
+    data = sheet.acell('F1').numeric_value
+    return data
