@@ -14,9 +14,9 @@ while True:
     pyautogui.click(960,540)
     pyautogui.hotkey("ctrl", "a")
     pyautogui.write(data)
-    wait(1)
+    wait(3)
     pyautogui.click(1080,880)
-    wait(1)
+    wait(3)
     pyautogui.click(960,580)
     wait(60)
 
