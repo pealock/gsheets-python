@@ -18,5 +18,5 @@ while True:
     pyautogui.click(1080,880)
     wait(1)
     pyautogui.click(960,580)
-    wait(60)
+    wait(5)
 
