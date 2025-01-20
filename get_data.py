@@ -22,7 +22,10 @@ sheet = client.open('python-sheets').sheet1
     # Sleep
     #time.sleep(10)
 
+def get_name():
+    data = sheet.acell('H1')
+    return data
 
-def get_data():
+def get_number():
     data = sheet.acell('F1').value
     return data

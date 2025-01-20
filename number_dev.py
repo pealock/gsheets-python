@@ -1,5 +1,5 @@
 import pyautogui
-from get_data import get_data
+from get_data import get_number
 import time
 
 screenWidth, screenHeight = pyautogui.size()
@@ -8,7 +8,7 @@ def wait(seconds):
     time.sleep(seconds)
 
 while True:
-    data = get_data()
+    data = get_number()
     print(data)
     wait(3)
     pyautogui.click(960,540)
@@ -18,5 +18,5 @@ while True:
     pyautogui.click(1080,880)
     wait(1)
     pyautogui.click(960,580)
-    wait(60)
+    wait(5)
 
