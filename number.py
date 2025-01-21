@@ -44,7 +44,7 @@ while True:
     print('')
     print('New data will be fetched in 10 seconds.')
     print('')
-    wait(1)
+    wait(10)
     print('')
     print('Fetching new data.')
     print('')
