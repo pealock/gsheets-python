@@ -7,6 +7,13 @@ screenWidth, screenHeight = pyautogui.size()
 def wait(seconds):
     time.sleep(seconds)
 
+print("                 _____ __              __      ")
+print("    ____  __  __/ ___// /_  ___  ___  / /______")
+print("   / __ \/ / / /\__ \/ __ \/ _ \/ _ \/ __/ ___/")
+print("  / /_/ / /_/ /___/ / / / /  __/  __/ /_(__  ) ")
+print(" / .___/\__, //____/_/ /_/\___/\___/\__/____/  ")
+print("/_/    /____/                                  ")
+
 while True:
     data = get_number()
     print('')
