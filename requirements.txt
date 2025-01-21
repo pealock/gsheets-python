@@ -1,6 +1,8 @@
+art==6.4
 cachetools==5.5.0
 certifi==2024.12.14
 charset-normalizer==3.4.1
+colorama==0.4.6
 google-auth==2.37.0
 google-auth-oauthlib==1.2.1
 gspread==6.1.4
@@ -12,6 +14,7 @@ oauthlib==3.2.2
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 PyAutoGUI==0.9.54
+pyfiglet==1.0.2
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
 pyobjc-core==11.0

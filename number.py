@@ -4,12 +4,16 @@ import time
 from pysheets_logo import pysheets_logo
 screenWidth, screenHeight = pyautogui.size()
 
+# Define timeout
 def wait(seconds):
     time.sleep(seconds)
 
+# Print pySheets logo
 pysheets_logo()
 
+# Sequence loop for fetching new data and updated LED control software
 while True:
+    # Call data fetch function
     data = get_number()
     print('')
     print('New data has been fetched.')
@@ -23,12 +27,17 @@ while True:
     print('Updating LED controller...')
     print('')
     wait(3)
+    # Select main text/ number input box
     pyautogui.click(960,540)
+    # Select all text
     pyautogui.hotkey("ctrl", "a")
+    # Replace previous text with new data
     pyautogui.write(data)
     wait(3)
+    # Select 'Send' button
     pyautogui.click(1080,880)
     wait(3)
+    # Confirm prompt
     pyautogui.click(960,580)
     wait(1)
     print('')
