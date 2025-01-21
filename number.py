@@ -1,11 +1,17 @@
 import pyautogui
 from get_data import get_number
 import time
-
+import pyfiglet
 screenWidth, screenHeight = pyautogui.size()
 
 def wait(seconds):
     time.sleep(seconds)
+
+pysheetsLogo = pyfiglet.figlet_format('pySheets', font='slant')
+
+print('')
+print(pysheetsLogo)
+print('')
 
 while True:
     data = get_number()
