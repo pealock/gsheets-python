@@ -12,6 +12,7 @@ pysheetsLogo = pyfiglet.figlet_format('pySheets', font='slant')
 print('')
 print(pysheetsLogo)
 print('')
+wait(5)
 
 while True:
     data = get_number()
