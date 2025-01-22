@@ -39,7 +39,7 @@ def text_box(text):
     print(text)
     print('')
 
-def update_led_sign(input):
+def update_led_sign(input, buffer):
     # Select main text/ number input box
     pyautogui.click(960, 540)
 
@@ -48,7 +48,7 @@ def update_led_sign(input):
 
     # Replace previous text with new data
     pyautogui.write(input)
-    wait(3)
+    wait(buffer)
 
     # Select 'Send' button
     pyautogui.click(1080, 880)
