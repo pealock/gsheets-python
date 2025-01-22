@@ -6,10 +6,6 @@ MODE 50,10
 REM connect to wifi
 netsh wlan connect ssid="RHX8-Q4AM#CF02BF" name="RHX8-Q4AM#CF02BF"
 
-REM Move to working dir & update repo
-cd %HOMEPATH%\Desktop\pealock\pySheets\
-git pull
-
 REM cd to git repo directory and launch script
 cd %HOMEPATH%\Desktop\pealock\pySheets\py
 python ./number.py
