@@ -13,7 +13,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('../.creds/sheets
 client = gspread.authorize(credentials)
 
 # Open the Google Sheet by its name or URL
-sheet = client.open('python-sheets').sheet1
+sheet = client.open("NEXT '25 – Together Fund LED Data").sheet1
 
 #while True:
     # Get all values from the sheet
@@ -24,11 +24,11 @@ sheet = client.open('python-sheets').sheet1
     #time.sleep(10)
 
 def get_name():
-    data = sheet.col_values(8)
+    data = sheet.col_values(1)
     return data
 
 def get_number():
-    data = sheet.acell('F1').value
+    data = sheet.acell('D2').value
     return data
 
 def wait(seconds):
