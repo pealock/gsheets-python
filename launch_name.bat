@@ -1,3 +1,5 @@
+@echo off
+
 REM set window size
 MODE 50,10
 
