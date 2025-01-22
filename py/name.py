@@ -21,7 +21,7 @@ while True:
     wait(3)
 
     # Call update function
-    update_led_sign(names, 15)
+    update_led_sign(names, 30, 10)
 
     print('')
     print('LED controller updated.')
