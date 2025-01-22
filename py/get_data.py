@@ -7,7 +7,7 @@ import pyautogui
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
 # Authenticate using the service account credentials
-credentials = ServiceAccountCredentials.from_json_keyfile_name('./.creds/sheets-python-447900-cff818541424.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('../.creds/sheets-python-447900-cff818541424.json', scope)
 
 # Authenticate the gspread client
 client = gspread.authorize(credentials)
