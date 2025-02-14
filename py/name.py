@@ -23,6 +23,7 @@ while True:
     # Call update function
     update_led_sign(names, 30, 10)
 
+    # Countdown timer
     print('')
     print('LED controller updated.')
     print('')
