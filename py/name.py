@@ -12,7 +12,7 @@ pysheets_logo()
 while True:
     # Call data fetch function
     data = get_name()
-    names = data + " - "
+    names = " - ".join(data)
     text_box('New data has been fetched.')
     wait(1)
     text_box(f'New list of names: {names}')
