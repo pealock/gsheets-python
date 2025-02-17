@@ -1,6 +1,7 @@
 import pyautogui
 from get_data import get_name, wait, text_box, update_led_sign
 from pysheets_logo import pysheets_logo
+from countdown_timer import countdown_timer
 
 # Get current screen dimensions
 screenWidth, screenHeight = pyautogui.size()
@@ -24,25 +25,7 @@ while True:
     update_led_sign(names, 30, 10)
 
     # Countdown timer
-    print('')
-    print('LED controller updated.')
-    print('')
-    wait(1)
-    print('')
-    print('New data will be fetched in 30 minutes.')
-    print('')
-    wait(1200)
-    print('')
-    print('New data will be fetched in 10 minutes.')
-    print('')
-    wait(540)
-    print('')
-    print('New data will be fetched in 1 minute.')
-    print('')
-    wait(60)
-    print('')
-    print('Fetching new data.')
-    print('')
+    countdown_timer()
 
 
 
