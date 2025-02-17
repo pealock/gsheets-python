@@ -25,7 +25,7 @@ while True:
     update_led_sign(names, 30, 10)
 
     # Countdown timer
-    countdown_timer()
+    countdown_timer(30)
 
 
 

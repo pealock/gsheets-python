@@ -1,27 +1,15 @@
 from get_data import wait
 
-def countdown_timer():
+def countdown_timer(minutes):
+    seconds = minutes * 60
     print('')
     print('LED controller updated.')
     print('')
     wait(1)
     print('')
-    print('New data will be fetched in 30 minutes.')
+    print(f"New data will be fetched in {minutes} minutes.")
     print('')
-    wait(1200)
+    wait(seconds)
     print('')
-    print('New data will be fetched in 10 minutes.')
-    print('')
-    wait(540)
-    print('')
-    print('New data will be fetched in 1 minute.')
-    print('')
-    wait(55)
-    print('')
-    print('5')
-    print('4')
-    print('3')
-    print('2')
-    print('1')
     print('Fetching new data.')
     print('')

@@ -21,10 +21,10 @@ while True:
     wait(3)
 
     # Call update function
-    update_led_sign(data, 3, 3)
+    #update_led_sign(data, 3, 3)
 
     # Countdown timer (30min)
-    countdown_timer()
+    countdown_timer(10)
 
 
 
